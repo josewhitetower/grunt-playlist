@@ -8,8 +8,16 @@ module.exports = function(grunt) {
                 dest: 'build/script.js'
             },
             css: {
-                src: ['css/*.css'],
+                src: ['css/reset.css', 'css/bootstrap.css', '/css/styles.css'],
                 dest: 'build/styles.css'
+            }
+        },
+        sass: {
+            build: {
+                files: [{
+                    src: 'css/sass/styles.scss',
+                    dest: 'css/styles.css'
+                }]
             }
         }
 
@@ -18,12 +26,15 @@ module.exports = function(grunt) {
 
     //Load plugins
     grunt.loadNpmTasks('grunt-contrib-concat');
+    grunt.loadNpmTasks('grunt-sass');
 
     //Register Tasks
 
     grunt.registerTask('concat-js', ['concat:js']);
-
     grunt.registerTask('concat-css', ['concat:css']);
+
+
+    grunt.registerTask('')
 
     // grunt.registerTask('run', function() {
     //     console.log('I am running');

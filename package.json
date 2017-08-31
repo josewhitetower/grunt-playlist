@@ -18,6 +18,9 @@
   "homepage": "https://github.com/josewhitetower/grunt-playlist#readme",
   "devDependencies": {
     "grunt": "^1.0.1",
-    "grunt-contrib-concat": "^1.0.1"
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-sass": "^2.0.0",
+    "node-sass": "^4.5.3"
   }
 }
